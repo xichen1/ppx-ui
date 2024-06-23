@@ -1,7 +1,16 @@
 {
   "name": "@ppx/ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "ppxa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xichen1/ppx-ui.git",
+    "directory": "."
+  },
+  "license": "MIT",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
