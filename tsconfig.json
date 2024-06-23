@@ -16,6 +16,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "declaration": true,
+    "typeRoots": ["./dist/index.d.ts"],
 
     /* Linting */
     "strict": true,
@@ -26,18 +28,21 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./lib/*"
       ],
       "@components/*": [
-        "./src/components/*"
+        "./lib/components/*"
       ],
       "@lib/*": [
-        "./src/lib/*"
+        "./lib/lib/*"
+      ],
+      "@src/*" :[
+        "./src/*"
       ]
     }
   },
   "include": [
-    "src"
+    "lib", "src"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
